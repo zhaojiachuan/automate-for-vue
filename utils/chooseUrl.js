@@ -27,7 +27,7 @@ module.exports.chooseUrl = async url => {
   const funcName = toCamelCase(newPath);
   const needParams = [];
   //   在api文件夹下会创建一个js文件，保存调取查询接口的方法
-  const targetFolderPath = path.join(__dirname, "../../src/api");
+  const targetFolderPath = path.join(__dirname, "../src/api");
   const filePath = path.join(targetFolderPath, "generate.js");
 
   if (!fs.existsSync(filePath)) {

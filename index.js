@@ -6,7 +6,7 @@ const { addFile, addDoc, hasSameFile } = require("./utils/type");
 
 const { createVueFunc } = require("./createVueFunc/index");
 // 项目目录，可以改的
-const targetFilePath = path.join(__dirname, "../src/views");
+const targetFilePath = path.join(__dirname, "./src/views");
 inquirer.prompt(addFile).then(firstAnswers => {
   const newFilerName = firstAnswers.fileName;
   const newTargetFilePath = path.join(targetFilePath, newFilerName);
